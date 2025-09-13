@@ -11,5 +11,5 @@ func (cmd *ExtractXCmd) Run(g *Globals) error {
 }
 
 func (cmd *PatchXCmd) Run() error {
-  return fmt.Errorf("this is a test error: %w", errors.New("i'm a bad man"))
+	return fmt.Errorf("this is a test error: %w", errors.New("i'm a bad man"))
 }
