@@ -13,7 +13,12 @@ dev:
 
 .PHONY: format
 format:
-	go fmt .
+	go fmt
+
+.PHONY: lint
+lint:
+	go vet .
+	golangci-lint .
 
 .PHONY: test
 test:
